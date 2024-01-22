@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:ui/buttons/custombutton.dart';
-import 'package:ui/calender_page/calender.dart';
+import 'package:ui/src/buttons/custombutton.dart';
+import 'package:ui/src/calender_page/calender.dart';
 
-import 'package:ui/customcard.dart';
-import 'package:ui/location_set/set_location.dart';
-import 'package:ui/login_page/login_page.dart';
-import 'package:ui/settings/settings_page.dart';
+import 'package:ui/src/customcard/customcard.dart';
+import 'package:ui/src/location_set/set_location.dart';
+import 'package:ui/src/login_page/login_page.dart';
+import 'package:ui/src/settings/settings_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
