@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:ui/buttons/custombutton.dart';
 import 'package:ui/calender_page/calender.dart';
-import 'package:ui/custombutton.dart';
+
 import 'package:ui/customcard.dart';
 import 'package:ui/location_set/set_location.dart';
-import 'package:ui/login_page.dart';
-import 'package:ui/settings_page.dart';
+import 'package:ui/login_page/login_page.dart';
+import 'package:ui/settings/settings_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -84,6 +85,7 @@ class HomePage extends StatelessWidget {
                   ),
                   style: IconButton.styleFrom(
                     padding: const EdgeInsets.all(20),
+                    animationDuration: const Duration(seconds: 3),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(18),
                     ),
