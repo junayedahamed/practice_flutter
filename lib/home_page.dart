@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui/calender_page/calender.dart';
 import 'package:ui/custombutton.dart';
 import 'package:ui/customcard.dart';
 import 'package:ui/location_set/set_location.dart';
@@ -71,7 +72,23 @@ class HomePage extends StatelessWidget {
               ),
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
                 const CustomIconButton(icon: Icons.message),
-                const CustomIconButton(icon: Icons.calendar_month),
+                IconButton.filledTonal(
+                  onPressed: () {
+                    showDialog(
+                        context: (context),
+                        builder: (context) => const CalendarMonth());
+                  },
+                  icon: const Icon(
+                    Icons.calendar_month,
+                    size: 25,
+                  ),
+                  style: IconButton.styleFrom(
+                    padding: const EdgeInsets.all(20),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(18),
+                    ),
+                  ),
+                ),
                 IconButton.filledTonal(
                   onPressed: () {
                     showDialog(
