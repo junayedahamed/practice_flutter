@@ -72,7 +72,19 @@ class HomePage extends StatelessWidget {
                 height: 25,
               ),
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                const CustomIconButton(icon: Icons.message),
+                IconButton.filledTonal(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.message,
+                    size: 25,
+                  ),
+                  padding: EdgeInsets.all(20),
+                  style: IconButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
                 IconButton.filledTonal(
                   onPressed: () {
                     showDialog(
@@ -85,7 +97,6 @@ class HomePage extends StatelessWidget {
                   ),
                   style: IconButton.styleFrom(
                     padding: const EdgeInsets.all(20),
-                    animationDuration: const Duration(seconds: 3),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(18),
                     ),
@@ -170,10 +181,19 @@ class HomePage extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: NavigationBar(
-        destinations: const [
-          CustomIconButton(icon: Icons.home),
-          CustomIconButton(icon: Icons.card_travel_outlined),
-          CustomIconButton(icon: Icons.message_outlined),
+        destinations: [
+          CustomIconButton(
+            icon: Icons.home,
+            onPressed: () {},
+          ),
+          CustomIconButton(
+            icon: Icons.card_travel_outlined,
+            onPressed: () {},
+          ),
+          CustomIconButton(
+            icon: Icons.message_outlined,
+            onPressed: () {},
+          ),
         ],
       ),
     );

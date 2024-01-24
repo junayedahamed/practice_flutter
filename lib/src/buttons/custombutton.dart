@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 
 class CustomIconButton extends StatelessWidget {
-  const CustomIconButton({super.key, required this.icon});
+  const CustomIconButton(
+      {super.key, required this.icon, required this.onPressed});
   final IconData icon;
+
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
     return Center(
       child: IconButton.filledTonal(
-        onPressed: () {},
+        onPressed: onPressed,
         icon: Icon(
           icon,
           size: 25,
